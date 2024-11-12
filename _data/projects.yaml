@@ -1,0 +1,6 @@
+projects:
+  - title: "Connect Four AI Agent"
+    subtitle: "Iterative deepening and alpha-beta pruning"
+    thumbnail: "assets/projects/2009_connect-four/thumbnail.png"
+    url: "projects/2009_connect-four.html"
+    selected: n

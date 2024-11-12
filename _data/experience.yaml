@@ -1,0 +1,31 @@
+experiences:  
+- place: "UNC Chapel Hill"
+  time: "Aug. 2024 - "
+  title: "Ph.D. Student in Computer Science"
+  subtitle: "Advisor: <a href='https://tianlong-chen.github.io/'  style='text-decoration: none;'>Prof. Tianlong Chen</a>"
+  category: "school"
+
+- place: "MIT"
+  time: "Aug. 2023 - Jul. 2024"
+  title: "Research Intern in Kellis Lab."
+  subtitle: "Mentor: <a href='https://tianlong-chen.github.io/'  style='text-decoration: none;'>Dr. Tianlong Chen</a>, <a href='https://scholar.google.com/citations?user=Yk4VxGQAAAAJ&hl=en'  style='text-decoration: none;'>Dr. Zunpeng Liu</a>"
+  category: "work"
+
+- place: "KAIST"
+  time: "Mar. 2021 - Aug. 2023"
+  title: "M.S. in Industrial & Systems Engineering"
+  subtitle: "Advisor: <a href='https://dsail.kaist.ac.kr/professor/'  style='text-decoration: none;'>Prof. Chanyoung Park</a>"
+  category: "school"
+
+- place: "Tokyo Tech"
+  time: "Oct. 2022 - Feb. 2023"
+  title: "Visting Researcher at Dept. of Computer Science"
+  subtitle: "Host: <a href='http://www.net.c.titech.ac.jp/murata.html'  style='text-decoration: none;'>Prof. Tsuyoshi Murata</a>"
+  category: "work"
+
+- place: "Hanyang University"
+  time: "Mar. 2015 - Aug. 2021"
+  title: "B.S. in Industrial Engineering"
+  subtitle: "Summa Cum Laude"
+  category: "school"
+    
