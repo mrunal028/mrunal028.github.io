@@ -7,7 +7,8 @@ title: Home
   <h4>Bio</h4>
 
   <p>
-    I am a <b><u>PhD aspirant</u></b> in <b><u>Computer Science</u></b>, currently pursuing my <b><u>Master's in Computer
+    I am a <b><u>PhD aspirant</u></b> in <b><u>Computer Science</u></b>, currently pursuing my <b><u>Master's in
+        Computer
         Science</u></b> at
     <b><u>Saint Louis University</u></b>.
     I am also working as a Graduate Research Assistant at the <a href="https://ankit.website/lab" target="_blank">
@@ -47,26 +48,14 @@ title: Home
 <div class="docs-section" id="education">
   <h4>Education</h4>
   <div class="paper">
-    <p class="title"><b>Saint Louis University<b style="float:right;">Aug. 2023 - </b></b></p>
+    <p class="title"><b>Saint Louis University<b style="float:right;">Aug. 2023 - May 2025</b></b></p>
 
     <p>M.Sc. in Computer Science</p>
     <p></p>
   </div>
-  <!-- <div class="paper">
-    <p class="title"><b>Korea Advanced Institute of Science and Technology (KAIST) <b style="float:right;">Aug. 2021 -
-          Aug. 2023</b></b></p>
 
-    <p>M.S. in Industrial and Systems Engineering (Advisor: <a href="https://dsail.kaist.ac.kr/professor/">Chanyoung
-        Park</a>)</p>
-    <p></p>
-  </div>
+  
 
-  <div class="paper">
-    <p class="title"><b>Hanyang University<b style="float:right;">Mar. 2015 - Aug. 2021</b></b></p>
-
-    <p>B.S. in Industrial Engineering
-    <p></p>
-  </div> -->
 </div>
 
 <!-- ========== NEWS ========== -->
@@ -104,6 +93,102 @@ title: Home
   </div>
 </div>
 
+<!-- ========== Projects ========== -->
+<div class="docs-section" id="projects">
+  <h4>Projects</h4>
+  <!-- <p>Most of the projects are having GitHub link and proper documentation</a>.<br />
+  </p> -->
+  <ul class="tab-nav">
+    <li>
+      <div class="button" data-ref="#sade-be-fe">SADE GUI & Backend</div>
+    </li>
+    <li>
+      <div class="button active" data-ref="#sade-simulation-plugins">SADE Sim-Plugins</div>
+    </li>
+    <li>
+      <div class="button" data-ref="#sade-workflow-management">SADE Workflow</div>
+    </li>
+    <li>
+      <div class="button" data-ref="#dr-camera-feed">DR live cam</div>
+    </li>
+  </ul>
+
+  <!-- Tab: sade backend frontend -->
+  <div class="tab-content">
+
+    <div class="tab-pane" id="sade-be-fe">
+      {% assign projects = site.data.projects.projects | where: "identifier", "sade-be-fe" %}
+      {% for project in projects %}
+      <div class="paper">
+        <h5>{{ project.title }}</h5>
+        <p>{{ project.subtitle }} <b>({{ project.timeline }})</b></p>
+        <div>
+          <p>{{ project.description }} </p>
+        </div>
+        <div>
+          {{ project.workContribution }}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- Tab: sade plugins -->
+
+    <div class="tab-pane active" id="sade-simulation-plugins">
+      {% assign projects = site.data.projects.projects | where: "identifier", "sade-simulation-plugins" %}
+      {% for project in projects %}
+      <div class="paper">
+        <h5>{{ project.title }}</h5>
+        <p>{{ project.subtitle }} <b>({{ project.timeline }})</b></p>
+        <div>
+          <p>{{ project.description }} </p>
+        </div>
+        <div>
+          {{ project.workContribution }}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- Tab: sade workflow management -->
+
+    <div class="tab-pane" id="sade-workflow-management">
+      {% assign projects = site.data.projects.projects | where: "identifier", "sade-workflow-management" %}
+      {% for project in projects %}
+      <div class="paper">
+        <h5>{{ project.title }}</h5>
+        <p>{{ project.subtitle }} <b>({{ project.timeline }})</b></p>
+        <div>
+          <p>{{ project.description }} </p>
+        </div>
+        <div>
+          {{ project.workContribution }}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- Tab: Drone response camera live stream -->
+
+    <div class="tab-pane" id="dr-camera-feed">
+      {% assign projects = site.data.projects.projects | where: "identifier", "dr-camera-feed" %}
+      {% for project in projects %}
+      <div class="paper">
+        <h5>{{ project.title }}</h5>
+        <p>{{ project.subtitle }} <b>({{ project.timeline }})</b></p>
+        <div>
+          <p>{{ project.description }} </p>
+        </div>
+        <div>
+          {{ project.workContribution }}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</div>
+
 <!-- ========== PUBLICATIONS ========== -->
 <div class="docs-section" id="publications">
   <h4>Publications</h4>
@@ -127,9 +212,9 @@ title: Home
 
   <div class="tab-content">
     <!-- <div class="tab-pane"> -->
-      <div class="paper">
-        <p class="title"><b>Working on it!</b></p>
-      </div>
+    <div class="paper">
+      <p class="title"><b>Working on it!</b></p>
+    </div>
     <!-- </div>  -->
 
     <!-- Tab: Preprint -->
@@ -203,9 +288,8 @@ title: Home
 <div class="docs-section" id="mentee">
   <h4>Mentee</h4>
   <p>
-    <b>Ankit Agarwal</b> (SLU), Jul 2024 - <br>
+    <b>Dr. Ankit Agarwal</b> (Saint Louis University), Jul 2024 - Present<br>
     <!-- <b>Douglas Thain</b> (UND), Aug 2024 - <br> -->
-    <!-- <b>Youran Qu</b> (Peking University), May 2024 - -->
   </p>
 
 </div>

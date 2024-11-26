@@ -1,12 +1,15 @@
-
 ul.tab-nav {
     list-style: none;
     border-bottom: 1px solid #bbb;
     padding-left: 5px;
+    white-space: nowrap; /* Prevents list items from wrapping to the next line */
+    overflow-x: auto; /* Enables horizontal scrolling */
+    max-width: 100%; /* Optional: Set a max width if desired */
 }
 
 ul.tab-nav li {
-    display: inline;
+    display: inline-block; /* Inline-block allows them to align horizontally */
+    margin-right: 10px; /* Optional: Add some spacing between list items */
 }
 
 ul.tab-nav li .button {
