@@ -7,38 +7,24 @@ title: Home
   <h4>Bio</h4>
 
   <p>
-    I am a <b><u>PhD aspirant</u></b> in <b><u>Computer Science</u></b>, currently pursuing my <b><u>Master's in
-        Computer
-        Science</u></b> at
-    <b><u>Saint Louis University</u></b>.
-    I am also working as a Graduate Research Assistant at the <a href="https://ankit.website/lab" target="_blank">
-      sUAS—Human-Centered Computing Lab (sUAS HCC) </a>,
-    advised by <a href="https://ankit.website/aboutme" target="_blank">Dr. Ankit Agarwal</a>,
-    in collaboration with the <a href="https://ccl.cse.nd.edu/" target="_blank"> Cooperative Computing Lab </a>, advised
-    by
-    <a href="https://dthain.github.io/" target="_blank">Prof. Dr. Douglas Thain</a> from the <b><u>University of Notre
-        Dame</u></b>.
-    Prior to my Master's studies at SLU, I worked as a <b>Solution Architect</b> at <b>Southwest Airlines</b>, a
-    <b>Senior Software Engineer</b> at <b>Qualcomm</b>,
-    and in other roles across different companies for over 4 years.
-
+    I am Dr. Mrunal Reddy Ragi who is a highly skilled Health Data Scientist with a strong background in dentistry,
+    blending clinical expertise with advanced data analytics to drive insights in healthcare. Holding a Master’s degree
+    in Health Data Science from Saint Louis University (GPA: 3.55/4.00) and a Bachelor’s degree in Dental Science from
+    Sri Sai College of Dental Surgery (GPA: 3.00/4.00), I posses a unique ability to bridge the gap between healthcare
+    and data-driven decision-making. Proficient in Python, R, SQL, and SAS, specializes in statistical modeling, machine
+    learning, and healthcare analytics. With hands-on experience in tools like Tableau, Power BI, Azure Data Factory,
+    and TensorFlow. My technical expertise extends to cloud platforms like AWS, Google Cloud, and Azure, as well as
+    database management systems such as Snowflake, PostgreSQL, and Amazon Redshift.
   </p>
 
   <p>
-    My current research interests focus on integrating <b>High-Performance Computing</b> with <b>Human-Computer
-      Interaction</b>,
-    specifically in the context of simulation or real-world applications.
-  <ol>
-    <li>Currently working on Small Unmanned
-      Aircraft Systems (sUAS) simulations, but I am eager to apply the benefits of <b>High-Performance Computing</b> to
-      other
-      <b>Human-Computer Interaction</b> systems as well.
-    </li>
-    <li> Focusing on the <b>Computer Vision</b> advancements and integrating
-      these advancements to improvise the Human-Computer interaction systems at high scale</li>
-    <li>Am also focusing on
-      improving the capabilities of currently exisiting approached of High Performance Computing.</li>
-  </ol>
+    In my professional journey, I have served as a Dentist at Facial Aesthetic Studio, assessed over 350 patients,
+    performed cosmetic treatments, and maintained a 96.6% patient satisfaction rate. my experience also includes a
+    dental internship at Sri Sai College of Dental Surgery, where I honed my skills in patient care, clinical
+    documentation, and adherence to infection control protocols. I am passionate about leveraging data to improve
+    healthcare outcomes and has participated in various symposiums and competitions, including the 5th Telangana State
+    Dental Conference and a national-level e-Poster competition. My work is driven by a commitment to compassionate
+    care, strategic problem-solving, and continuous learning.
   </p>
 
 </div>
@@ -54,43 +40,13 @@ title: Home
     <p></p>
   </div>
 
-  
+  <div class="paper">
+    <p class="title"><b>Sri Sai College of Dental Surgery<b style="float:right;">June 2015 - May 2021</b></b></p>
 
-</div>
-
-<!-- ========== NEWS ========== -->
-<div class="docs-section" id="news">
-  <h4>News</h4>
-
-  <ul class="tab-nav">
-    <li>
-      <div class="button active" data-ref="#news-2024">2024</div>
-    </li>
-    <li>
-      <div class="button" data-ref="#news-2023-past">2023-Past</div>
-    </li>
-  </ul>
-
-  <!-- UNCOMMENT BELOW ONCE YOU START ADDING THE NEWS -->
-
-  <div class="tab-content">
-    <div class="tab-pane active" id="news-2024">
-      {% assign news2024 = site.data.news.news | where: "year", "2024" %}
-      {% for news in news2024 %}
-      <div class="news">
-        <li>{{ news.content }}</li>
-      </div>
-      {% endfor %}
-    </div>
-
-    <div class="tab-pane" id="news-2023-past">
-      {% assign news2023 = site.data.news.news | where: "year", "past" %}
-      {% for news in news2023 %}
-      <li>{{ news.content }}</li>
-      {% endfor %}
-    </div>
-
+    <p>Bachelors in Dental Science (BDS)</p>
+    <p></p>
   </div>
+
 </div>
 
 <!-- ========== Projects ========== -->
@@ -104,12 +60,6 @@ title: Home
     </li>
     <li>
       <div class="button active" data-ref="#sade-simulation-plugins">SADE Sim-Plugins</div>
-    </li>
-    <li>
-      <div class="button" data-ref="#sade-workflow-management">SADE Workflow</div>
-    </li>
-    <li>
-      <div class="button" data-ref="#dr-camera-feed">DR live cam</div>
     </li>
   </ul>
 
@@ -150,148 +100,7 @@ title: Home
       {% endfor %}
     </div>
 
-    <!-- Tab: sade workflow management -->
-
-    <div class="tab-pane" id="sade-workflow-management">
-      {% assign projects = site.data.projects.projects | where: "identifier", "sade-workflow-management" %}
-      {% for project in projects %}
-      <div class="paper">
-        <h5>{{ project.title }}</h5>
-        <p>{{ project.subtitle }} <b>({{ project.timeline }})</b></p>
-        <div>
-          <p>{{ project.description }} </p>
-        </div>
-        <div>
-          {{ project.workContribution }}
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-
-    <!-- Tab: Drone response camera live stream -->
-
-    <div class="tab-pane" id="dr-camera-feed">
-      {% assign projects = site.data.projects.projects | where: "identifier", "dr-camera-feed" %}
-      {% for project in projects %}
-      <div class="paper">
-        <h5>{{ project.title }}</h5>
-        <p>{{ project.subtitle }} <b>({{ project.timeline }})</b></p>
-        <div>
-          <p>{{ project.description }} </p>
-        </div>
-        <div>
-          {{ project.workContribution }}
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-
   </div>
-</div>
-
-<!-- ========== PUBLICATIONS ========== -->
-<div class="docs-section" id="publications">
-  <h4>Publications</h4>
-
-  <p>Most recent publications on <a href="{{ site.data.main_info.google_scholar }}" target="_blank">Google
-      Scholar</a>.<br />
-    <sup><b>*</b></sup> indicates equal contribution.
-  </p>
-
-  <ul class="tab-nav">
-    <li>
-      <div class="button" data-ref="#papers-preprint">Preprint</div>
-    </li>
-    <li>
-      <div class="button active" data-ref="#papers-2024">2024-past</div>
-    </li>
-    <li>
-      <div class="button" data-ref="#papers-all">All</div>
-    </li>
-  </ul>
-
-  <div class="tab-content">
-    <!-- <div class="tab-pane"> -->
-    <div class="paper">
-      <p class="title"><b>Working on it!</b></p>
-    </div>
-    <!-- </div>  -->
-
-    <!-- Tab: Preprint -->
-
-    <!-- <div class="tab-pane" id="papers-preprint">
-      {% assign paperspreprint = site.data.publications.papers | where: "year", "preprint" %}
-      {% for paper in paperspreprint %}
-      <div class="paper">
-        <p class="title"><b>{{ paper.title }}</b></p>
-        <p>{{ paper.authors }}</p>
-        <p><i>{{ paper.venue }}</i></p>
-        <div class="paper-buttons">
-          {% if paper.paper_pdf %}
-          <a class="button" href="{{ paper.paper_pdf }}" target="_blank">Paper</a>
-          {% endif %}
-          {% if paper.code %}
-          <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
-          {% endif %}
-        </div>
-      </div>
-      {% endfor %}
-    </div> -->
-
-    <!-- Tab: 2024 -->
-
-    <!-- <div class="tab-pane active" id="papers-2024">
-      {% assign papers2024 = site.data.publications.papers | where: "year", "2024" %}
-      {% for paper in papers2024 %}
-      <div class="paper">
-        <p class="title"><b>{{ paper.title }}</b></p>
-        <p>{{ paper.authors }}</p>
-        <p><i>{{ paper.venue }}</i></p>
-        <div class="paper-buttons">
-          {% if paper.paper_pdf %}
-          <a class="button" href="{{ paper.paper_pdf }}" target="_blank">Paper</a>
-          {% endif %}
-          {% if paper.code %}
-          <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
-          {% endif %}
-        </div>
-      </div>
-      {% endfor %}
-    </div> -->
-
-    <!-- Tab: papers all -->
-
-
-    <!-- <div class="tab-pane" id="papers-all">
-      {% assign papersall = site.data.publications.papers %}
-      {% for paper in papersall %}
-      <div class="paper">
-        <p class="title"><b>{{ paper.title }}</b></p>
-        <p>{{ paper.authors }}</p>
-        <p><i>{{ paper.venue }}</i></p>
-        <div class="paper-buttons">
-          {% if paper.paper_pdf %}
-          <a class="button" href="{{ paper.paper_pdf }}" target="_blank">Paper</a>
-          {% endif %}
-          {% if paper.code %}
-          <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
-          {% endif %}
-        </div>
-      </div>
-      {% endfor %}
-    </div> -->
-
-  </div>
-</div>
-
-<!-- ========== Mentee ========== -->
-<div class="docs-section" id="mentee">
-  <h4>Mentee</h4>
-  <p>
-    <b>Dr. Ankit Agarwal</b> (Saint Louis University), Jul 2024 - Present<br>
-    <!-- <b>Douglas Thain</b> (UND), Aug 2024 - <br> -->
-  </p>
-
 </div>
 
 
